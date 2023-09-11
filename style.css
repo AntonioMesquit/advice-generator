@@ -1,0 +1,78 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;600;800&display=swap');
+
+:root{
+    --background: #202632;
+    --advice: #5AB796;
+    --cube:#52FFAE;
+    --pause: #CDE1E8;
+    --card: #313A49;
+    font-size: 62.5%;
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+body{
+    background-color: var(--background);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.card{
+    background-color: var(--card);
+    width: 40rem;
+    text-align: center;
+    padding: 4rem 3rem 4.5rem 3rem;
+    border-radius: 2rem;
+    height: auto;
+    position: relative;
+}
+.text{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.advice-number{
+color: var(--cube);
+text-transform: uppercase;
+letter-spacing: .5rem;
+font-weight: 800;
+margin-bottom: 2rem;
+}
+.advice-text{
+    color: #D0E1EB;
+}
+.arrow{
+    width: 100%;
+}
+.cube{
+    position: absolute;
+    left: 50%;
+    bottom: -6.5rem;
+    transform: translate(-50%, -50%);
+    background-color: var(--cube);
+    padding: 2.0rem;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+
+
+
+@media screen and (max-width:450px){
+    .card{
+        margin-inline: 2rem;
+    }
+    .card h1{
+        font-size: 1.5rem;
+    }
+}
