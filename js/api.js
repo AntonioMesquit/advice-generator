@@ -6,8 +6,8 @@ export async function fetchText() {
         let adviceID = data.slip.id;
         let adviceText = data.slip.advice;
 
-        document.querySelector('.advice-number').innerHTML = `Advice#<span id="advice-id">${adviceID}</span>`;
-        document.querySelector('.advice-text').innerHTML = `“${adviceText}”`;
+        document.querySelector('.advice-number').innerHTML = `Advice#<span id="advice-id" style="animation: op 1s forwards;">${adviceID}</span>`;
+        document.querySelector('.advice-text').innerHTML = `“<span style="animation: op 1s forwards;">${adviceText}</span>”`;
     }
    
     

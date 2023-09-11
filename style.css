@@ -48,6 +48,7 @@ margin-bottom: 2rem;
 }
 .advice-text{
     color: #D0E1EB;
+    
 }
 .arrow{
     width: 100%;
@@ -67,7 +68,16 @@ margin-bottom: 2rem;
 }
 
 
-
+@keyframes op{
+    0%{
+        opacity: 0;
+        transform: scale(0.7) translateY(100%);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
 @media screen and (max-width:450px){
     .card{
         margin-inline: 2rem;
